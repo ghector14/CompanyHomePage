@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@700&display=swap');
+
+
+/* Global styles*/
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: black;
+}
+
+
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    color: silver;
+}
+
+h1 {
+    font-size: 4rem;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin: 0;
+    color: #B7B8BC;
+}
+
+p {
+    color: white;
+    font-family: 'Parisienne', cursive;
+}
+
+.case,
+.car {
+    border: 2px solid black;
+}
+
+
+#fly {
+    font-family: 'Parisienne', cursive;
+}
+
+.description {
+    
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 30px 30px;
+}
+
+section.projects,
+section.contacts {
+    max-width: 1000px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+nav,
+footer,
+header {
+    background-color:#0B0D17;
+}
+
+
+/* Navigation */
+
+nav {
+    height: 80px;
+    position: fixed;    
+    width: 100%;
+    color: #FBFBFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black; 
+}
+
+img.logo {
+    height: 30px;
+    margin: 10px 0;
+    margin-left: 30px;
+}
+
+nav .links {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+nav a:hover {
+    color: rgb(124,183,222);
+    cursor: pointer;
+}
+
+#no {
+    color: white;
+    text-decoration: none;
+}
+
+#no:hover {
+    color: rgb(124,183,222);
+    cursor: pointer;
+}
+
+nav a {
+    margin: 15px;
+}
+
+nav button {
+    border-radius: 5px;
+    background-color: rgb(124,183,222);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.4s ease 0s;
+    border: none;
+    cursor: pointer;
+    
+}
+
+
+
+
+.burgermenu {
+    margin: auto;
+    margin-left: 10px;
+    display: none;    
+}
+
+.burgermenu img {
+    height: 30px;
+    width: 40px;
+    padding: 10px 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .links a {
+        display: none;
+    }
+
+    nav .burgermenu {
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+}
+
+/* Header */
+
+header {
+    background-image: url("images/meks.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    color: white;
+    align-items: center;
+    padding-top: 80px;
+    text-align:center;
+
+}
+
+header h1 {
+    font-style: italic;
+    color: white;
+    max-width: 800px;
+    margin: 60px;
+    text-align:center;
+    display:inline-block;
+    position:relative;
+    width:100%; /*Add this*/
+}
+
+/* Projects */
+
+.cases {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.case {    
+    width: 250px;
+    min-height: 250px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#tesla {
+    background-image: url("images/tesla-roadster.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+#lambo {
+    background-image: url("images/lamborghini-ex.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+#ferrari {
+    background-image: url("images/ferrarirr.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+#ford {
+    background-image: url("images/fordl.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+
+
+/* Team */
+
+.more h2 {
+    display: none;
+}
+
+.cars {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.car {
+    width: 100px;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+#chevy {
+    background-image: url("images/chevy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nissan {
+    background-image: url("images/nissan.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#toyota {
+    background-image: url("images/toyota.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mazda {
+    background-image: url("images/mazda.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#h22 {
+    font-family: 'Playball', cursive;
+}
+
+/* Contacts */
+
+section.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contacts img {
+    width: 280px;
+    height: auto;
+    flex-grow: 2;
+}
+
+.contacts .content {
+    width: 280px;
+    padding-right: 40px;
+    margin: 20px 0;
+    flex-grow: 1;
+}
+
+form {
+    color: white;
+}
+
+#blue {
+    border: 1px solid rgb(124,183,222);
+    border-radius: 10px;
+}
+
+label {
+    font-style: italic;
+}
+
+
+/* Copyright */
+
+footer {        
+    background-color: black;  
+    padding: 5px 30px;
+    border-top: 2px solid #282B37;
+}
+
+footer p,
+footer a {
+    font-size: 0.75rem;
+    text-align: center;
+    color: silver; 
+}
+
